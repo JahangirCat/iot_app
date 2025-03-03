@@ -156,6 +156,7 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 
+
     </LinearLayout>
 
     <LinearLayout
@@ -250,12 +251,13 @@
 
         <ImageButton
             android:scaleType="fitXY"
+            android:onClick="Intercation"
             android:background="@drawable/icon_bg"
             android:src="@drawable/home_icon_main"
             android:layout_width="30dp"
             android:layout_height="30dp"/>
     <TextView
-        android:text="首页"
+        android:text="设备交互"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     </LinearLayout>

@@ -92,4 +92,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, YOLO.class);
         startActivity(intent);
     }
+
+    public void Intercation(View view) {
+        Intent intent = new Intent(MainActivity.this, InteractionActivity.class);
+        startActivity(intent);
+    }
 }
