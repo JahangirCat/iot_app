@@ -99,12 +99,6 @@
         <activity
             android:name=".LightActivity"
             android:exported="true" />
-        <activity
-            android:name=".InteractionActivity"
-            android:exported="true" />
-        <activity
-            android:name=".PressureActivity"
-            android:exported="true" />
     </application>
 
 </manifest>
