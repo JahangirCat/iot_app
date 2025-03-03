@@ -204,7 +204,8 @@
                 android:layout_height="50dp"
                 android:background="@drawable/icon_bg"
                 android:scaleType="fitXY"
-                android:src="@drawable/alarm_icon_main" />
+                android:src="@drawable/alarm_icon_main"
+                android:onClick="Alarm"/>
 
             <TextView
                 android:layout_width="wrap_content"

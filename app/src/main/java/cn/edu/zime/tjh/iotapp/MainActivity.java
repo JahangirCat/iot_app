@@ -63,7 +63,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, AddEquipment.class);
         startActivity(intent);
     }
-    
+
+    public void Alarm(View V){
+        Intent intent = new Intent(MainActivity.this, AlarmActivity.class);
+        startActivity(intent);
+    }
     public void Light(View V){
         Intent intent = new Intent(MainActivity.this, LightActivity.class);
         startActivity(intent);
