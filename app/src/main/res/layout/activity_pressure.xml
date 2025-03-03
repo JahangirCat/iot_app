@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 显示压力值的 TextView -->
+    <TextView
+        android:id="@+id/pressureValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="压力值: "
+        android:textSize="18sp" />
+
+    <!-- 压力曲线图 -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="600px" />
+
+    <!-- 压力数据表格 -->
+    <TableLayout
+        android:id="@+id/pressureTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TableRow>
+            <TextView
+                android:text="序号"
+                android:padding="8dp" />
+            <TextView
+                android:text="压力值 (hPa)"
+                android:padding="8dp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

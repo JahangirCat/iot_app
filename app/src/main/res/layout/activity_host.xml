@@ -92,6 +92,7 @@
             <ImageButton
                 android:src="@drawable/presure_icon_main"
                 android:background="@drawable/icon_bg"
+                android:onClick="Presure"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:scaleType="fitXY"/>

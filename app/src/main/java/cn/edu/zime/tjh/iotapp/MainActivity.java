@@ -97,4 +97,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, InteractionActivity.class);
         startActivity(intent);
     }
+    public void Presure(View V){
+        Intent intent = new Intent(MainActivity.this, PressureActivity.class);
+        startActivity(intent);
+    }
 }
