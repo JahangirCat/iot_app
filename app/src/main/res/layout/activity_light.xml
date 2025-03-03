@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/lightValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="光照强度: "
+    />
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        />
+    <TableLayout
+        android:id="@+id/lightTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TableRow>
+            <TextView
+                android:text="序号"
+                android:padding="8dp"/>
+            <TextView
+                android:text="光照强度"
+                android:padding="8dp"/>
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 允许所有明文HTTP流量 -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    
+    <!-- 特定域名配置 -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- 添加您的后端服务器域名/IP -->
+        <domain includeSubdomains="true">192.168.31.144</domain>
+    </domain-config>
+</network-security-config>

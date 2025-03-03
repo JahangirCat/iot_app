@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backround"
+    android:orientation="vertical">
+
+    <!-- View 1 -->
+    <LinearLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:src="@drawable/login"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备管理手持端"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <!-- View 2 -->
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_background"
+        android:orientation="vertical"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        >
+
+        <TextView
+            android:text="登录"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:text="用户名：" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/square_input_background"
+                android:hint="用户名不能为空..."
+                android:paddingLeft="10dp"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:text="密码：" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="7"
+                android:background="@drawable/square_input_background"
+                android:hint="密码不少于五位数..."
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnFindPwd"
+                android:text="找回密码"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/gradient_button"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:text="注册用户"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/gradient_button"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btnBack"
+            android:onClick="back"
+            android:text="退出"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gradient_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="登录"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gradient_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- View 3 -->
+    <LinearLayout
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="浙江机电职业技术大学"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现代信息技术学院"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

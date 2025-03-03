@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="扫描结果将显示在这里"
+        android:autoLink="web"
+        android:clickable="true"
+        android:focusable="true"/> <!-- 自动识别并高亮链接 -->
+
+    <Button
+        android:layout_gravity="center"
+
+        android:id="@+id/btn_open_link"
+        android:onClick="ScanResultBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        />
+
+
+</LinearLayout>

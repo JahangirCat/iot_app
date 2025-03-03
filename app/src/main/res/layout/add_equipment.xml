@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/eqimages" >
+    </ImageView>
+    <Button
+        android:text="选择图片"
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="设备编码" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="设备名称" />
+
+    <EditText
+        android:id="@+id/etDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="登记日期" />
+
+    <EditText
+        android:id="@+id/etPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="负责人" />
+    <ImageView
+        android:id="@+id/image_code"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/eqimages" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnGenerateQRCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加二维码" />
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#4095E5"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="44dp"
+            android:layout_height="40dp"
+            android:background="@drawable/icon_bg"
+            android:onClick="EqBack"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_icon_addeq" />
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="新增处置"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#0588E0"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+    <ListView
+        android:layout_weight="1"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:background="#0588E0"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+    <ImageButton
+        android:id="@+id/add"
+        android:onClick="showAddDialog"
+        android:src="@drawable/equipment_icon_main"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"/>
+        <TextView
+            android:text="添加设备"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

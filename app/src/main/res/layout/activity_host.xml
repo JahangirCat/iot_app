@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEFA"
+    >
+
+    <LinearLayout
+        android:background="@drawable/gradient_backround_main"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        >
+    <TextView
+        android:text="设备管理手持端"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/images_main" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/background_main_border"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp"        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:src="@drawable/temperature_main"
+                android:background="@drawable/icon_bg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:onClick="Altiduede"
+                />
+            <TextView
+                android:text="海拔"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:src="@drawable/liaght_icon_main"
+            android:background="@drawable/icon_bg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+                android:onClick="Light"
+                />
+            <TextView
+                android:text="光照"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:src="@drawable/presure_icon_main"
+                android:background="@drawable/icon_bg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"/>
+            <TextView
+                android:text="压力"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/background_main_border"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:padding="10dp"        >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:src="@drawable/scan_icon_main"
+                android:background="@drawable/icon_bg"
+                android:layout_width="50dp"
+                android:onClick="Scan"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:text="扫码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:src="@drawable/equipment_icon_main"
+                android:onClick="equipment"
+                android:background="@drawable/icon_bg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:text="已有设备"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_main_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_bg"
+                android:onClick="Location"
+                android:scaleType="fitXY"
+                android:src="@drawable/compass_icon_main" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地图" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/alarm_icon_main" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="警报" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_bg"
+                android:scaleType="fitXY"
+                android:onClick="YOLO"
+                android:src="@drawable/monitor_icon_main" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="检测" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageButton
+            android:scaleType="fitXY"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/home_icon_main"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    <TextView
+        android:text="首页"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:scaleType="fitXY"
+            android:id="@+id/mystate"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/mine_icon_main"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    <TextView
+        android:text="我的"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+
